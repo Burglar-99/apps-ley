@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.com.azteca.home">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+
+        android:name=".HomeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name=".model.provider.HomeProvider"
+            android:authorities="mx.com.azteca.home"
+            android:exported="false" />
+
+        <activity
+            android:name=".view.PresentacionActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.MapActivity" />
+        <activity android:name=".view.GuideActivity" />
+        <activity
+            android:name=".view.ipati.FormularioActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"></activity>
+        <activity
+            android:name=".view.ipati.DocManagerActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".view.MapActivity"
+            android:screenOrientation="nosensor"></activity>
+        <activity
+            android:name=".view.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"></activity>
+        <activity
+            android:name=".view.CrearCuentaActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"></activity>
+        <activity
+            android:name=".view.PagoActivity"
+            android:label="Pago"
+            android:parentActivityName=".view.MapActivity"
+            android:screenOrientation="nosensor"></activity>
+        <activity
+            android:name=".view.ComparableActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".view.MapActivity"></activity>
+        <activity
+            android:name=".view.ReporteAcitivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".view.MapActivity"></activity>
+        <activity
+            android:name=".view.MetodoPagoActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".view.MapActivity"></activity>
+        <activity
+            android:name=".view.FichaPagoActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".view.MapActivity"></activity>
+
+        <service
+            android:name=".service.LocalizacionServices"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.DataLoaderService" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".view.TerminosActivity"
+            android:label="@string/title_activity_terminos"></activity>
+    </application>
+
+</manifest>

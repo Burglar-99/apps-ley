@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="55dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:transitionName="actionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+<!--        android:background="@mipmap/img_background" -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="10dp"
+            android:isScrollContainer="?android:attr/windowFullscreen"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="
+
+                Actualizaciones Clave
+El respeto a tu privacidad se encuentra codificado en nuestro ADN. Desde que iniciamos WhatsApp, hemos construido nuestros servicios con fuertes principios de privacidad en mente. En nuestros Términos de servicio y Política de privacidad actualizados encontrarás lo siguiente:
+
+Información más fácil de comprender. Nuestros Términos de Servicio y Política de Privacidad son más fáciles de comprender y reflejan nuevas funciones, tales como la Llamada WhatsApp y WhatsApp para computadora.
+Nos unimos a Facebook en 2014. WhatsApp es parte de la familia de empresas de Facebook. Nuestra Política de Privacidad explica cómo trabajamos en conjunto para brindarte una mejor experiencia; por ejemplo, al combatir los mensajes no solicitados entre las aplicaciones, hacer sugerencias de productos, y mostrarte ofertas y publicidad relevantes en Facebook. Nada de lo que compartes en WhatsApp--incluyendo tus mensajes, fotos, e información de perfil--será compartido en Facebook, o en alguna de las aplicaciones que pertenecen a la familia de Facebook, para que otros los vean. De la misma manera, lo que tú publiques en esas aplicaciones no será compartido en WhatsApp para que otros lo vean.
+Tus mensajes te pertenecen y nosotros no podemos leerlos. En WhatsApp hemos desarrollado funciones para proteger tu privacidad y seguridad. No almacenamos tus mensajes una vez que son entregados. Cuando los mensajes están cifrados de extremo a extremo; ni nosotros, ni terceras personas pueden leerlos.
+Cero anuncios bannner de terceros. No permitimos publicidad por parte de terceros en WhatsApp.
+Nuevas maneras de usar WhatsApp. Exploraremos maneras para que tú y diferentes comercios puedan comunicarse usando WhatsApp, por ejemplo con información de pedidos, transacciones y citas; notificaciones de entrega y envío; actualizaciones de producto y servicio; y mercadotecnia en general. Por ejemplo, puedes recibir información sobre el estado de un vuelo para un viaje próximo, un recibo de algo que compraste o una notificación sobre la fecha de una entrega. Los mensajes de mercadotecnia podrían incluir una oferta de algo que quizás te interese. No queremos que recibas mensajes no solicitados, es por eso que, al igual que con todos tus mensajes, puedes administrar estas comunicaciones y respetaremos las opciones que elijas.
+Tus opciones. Si eres un usuario actual, tendrás la opción de elegir que la información de tu cuenta WhatsApp no sea compartida con Facebook para mejorar tu experiencia con la publicidad y los productos en Facebook. Los usuarios que acepten nuestros Términos y Política de Privacidad actualizados, tendrán 30 días adicionales para tomar esta decisión yendo a Ajustes > Cuenta.
+
+
+" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

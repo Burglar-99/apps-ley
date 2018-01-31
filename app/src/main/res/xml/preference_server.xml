@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Servidor">
+        <EditTextPreference android:key="pref_server_user"
+            android:title="Usuario"
+            android:inputType="text"
+            android:summary="Usuario utilizado para abrir conexi\u00f3nn"
+            android:defaultValue="MobileUser"/>
+        <EditTextPreference android:key="pref_server_passwd"
+            android:title="Contrase\u00f1a"
+            android:inputType="text"
+            android:summary="Contrase\u00f1a utilizada para abrir conexi\u00f3nn"
+            android:defaultValue="L0g1n@dm1n"/>
+    </PreferenceCategory>
+</PreferenceScreen>

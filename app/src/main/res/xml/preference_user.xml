@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Documento">
+        <EditTextPreference android:key="pref_image_size"
+            android:title="Im\u00e1genes"
+            android:inputType="number"
+            android:summary="Tama\u00f1o de imagen al descargar del servidor"
+            android:defaultValue="500"/>
+    </PreferenceCategory>
+</PreferenceScreen>

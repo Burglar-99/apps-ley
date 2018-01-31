@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="@drawable/button_rect_list_normal"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="80dp"
+            android:textColor="@color/text"
+            android:text="Prueba"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblOffline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="80dp"
+            android:textColor="@color/secondary"
+            android:layout_gravity="center"
+            android:text="Num:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/countryImage"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:clickable="false"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:transitionName="appIcon" />
+
+</android.support.v7.widget.CardView>

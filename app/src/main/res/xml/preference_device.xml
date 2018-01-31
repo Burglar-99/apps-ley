@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference android:key="LoginUser"
+        android:title="Usuario"
+        android:inputType="number"
+        android:summary="Id usuario que inicio sesión 0 indica que no hay un usuario"
+        android:defaultValue="0"/>
+
+    <CheckBoxPreference android:key="GuideCompleted"
+        android:title="Guía completada por el usuario"
+        android:summary="Indica si el usuario completo el tutorial mostrado por la apliaci\u00f3n"
+        android:defaultValue="false"/>
+
+    <EditTextPreference android:key="EmailConfirmacion"
+        android:title="Email del usuario"
+        android:inputType="text"
+        android:summary="Cuenta email utilizada en el dipositivo"
+        android:defaultValue="500"/>
+
+    <EditTextPreference android:key="IdCliente"
+        android:title="ID Cliente"
+        android:inputType="number"
+        android:summary="Id del cliente creado en ipati"
+        android:defaultValue="500"/>
+
+    <CheckBoxPreference android:key="DataLoaded"
+        android:title="Registros default"
+        android:summary="Marca el registro de poblaciones, municipios y colonias"
+        android:defaultValue="false"/>
+
+</PreferenceScreen>
